@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Secular+One&display=swap" rel="stylesheet">
+    <title>El Clima</title>
+</head>
+<body onload= "onLoad()">
+    <div class="contain">
+        <div class="intro">
+            <h1>The Weather</h1>
+            <img src="img/icono.png" alt="Icono del sitio" width="200px">
+        </div>
+        <div class="absoluteContain">
+            <div class="containerInfo">
+                <div class="location" id="location"></div>
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="containerInfo">
+                <p style="font-size: 20px;">Condition</p>
+                <div class="description" id="description"></div>
+            </div>
+            <div class="containerInfo">
+                <p style="font-size: 20px;">Date</p>
+                <div class="date" id="date"></div>
+            </div>
+            <div class="containerWeather">
+                <p style="font-size: 20px;">Temperature</p>
+                <div id="temperature"></div>
+            </div>
+            <div class="containerWeather">
+                <p style="font-size: 20px;">Humidity</p>
+                <div id="humidity"></div>
+            </div>
+            <div class="containerWeather">
+                <p style="font-size: 20px;">Pressure</p>
+                <div id="pressure"></div>
+            </div>
+        </div>
+        <div class="boxTable">
+            <h2 style="background-color:#E2EFDE;">Hourly Weather</h2>
+            <table style="width:100%;">
+              <tbody>
+                <tr>
+                  <td class="br-top br-bt br-left br-right"></td>
+                  <td class="br-top br-bt br-left br-right hour">3pm</td>
+                  <td class="br-top br-bt br-left br-right hour">4pm</td>
+                  <td class="br-top br-bt br-left br-right hour">5pm</td>
+                  <td class="br-top br-bt br-left br-right hour">6pm</td>
+                  <td class="br-top br-bt br-left br-right hour">7pm</td>
+                  <td class="br-top br-bt br-left br-right hour">8pm</td>
+                  <td class="br-top br-bt br-left br-right hour">9pm</td>
+                  <td class="br-top br-bt br-left br-right hour">10pm</td>
+                </tr>
+                <tr>
+                  <td class="br-0"></td>
+                  <td class="br-0"></td>
+                  <td class="br-0"></td>
+                  <td class="br-0"></td>
+                  <td class="br-0"></td>
+                  <td class="br-0"></td>
+                  <td class="br-0"></td>
+                  <td class="br-0"></td>
+                  <td class="br-0"></td>
+                </tr>
+                <tr>
+                  <td class="br-0"> </td>
+                  <td class="br-top br-bt br-left"><img alt="sol" src="https://www.clarin.com/static/DESClima/images/v3/0.png" width="30" height="30" pinger-seen="true"></td>
+                  <td class="br-top br-bt"><img alt="sol" src="https://www.clarin.com/static/DESClima/images/v3/0.png" width="30" height="30" pinger-seen="true"></td>
+                  <td class="br-top br-bt"><img alt="sol" src="https://www.clarin.com/static/DESClima/images/v3/0.png" width="30" height="30" pinger-seen="true"></td>
+                  <td class="br-top br-bt"><img alt="sol" src="https://www.clarin.com/static/DESClima/images/v3/0.png" width="30" height="30" pinger-seen="true"></td>
+                  <td class="br-top br-bt"><img alt="sol" src="https://www.clarin.com/static/DESClima/images/v3/0.png" width="30" height="30" pinger-seen="true"></td>
+                  <td class="br-top br-bt"><img alt="sol" src="https://www.clarin.com/static/DESClima/images/v3/0.png" width="30" height="30" pinger-seen="true"></td>
+                  <td class="br-top br-bt  br-right"><img alt="sol" src="https://www.clarin.com/static/DESClima/images/v3/0.png" width="30" height="30" pinger-seen="true"></td>
+                  <td class="br-top br-bt"><img alt="sol" src="https://www.clarin.com/static/DESClima/images/v3/0.png" width="30" height="30" pinger-seen="true"></td>
+                </tr>
+                <tr>
+                </tr>
+                  <td class="br-left br-right br-top title-1">Condiciones</td>
+                  <td class="br-top br-left des">Soleado</td>
+                  <td class="br-top des ">Soleado</td>
+                  <td class="br-top des">Soleado</td>
+                  <td class="br-top des">Soleado</td>
+                  <td class="br-top des">Soleado</td>
+                  <td class="br-top des">Despejado</td>
+                  <td class="br-top des">Despejado</td>
+                  <td class="br-top  br-right des">Despejado</td>
+                <tr>
+                  <td class="br-left br-right title-1 br-bt">Temp.</td>
+                  <td class="number br-left "><span class="tempVal" oval="23">23</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number"><span class="tempVal" oval="22">22</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number"><span class="tempVal" oval="22">22</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number"><span class="tempVal" oval="21">21</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number"><span class="tempVal" oval="21">21</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number"><span class="tempVal" oval="21">21</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number"><span class="tempVal" oval="21">21</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number  br-right"><span class="tempVal" oval="22">22</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                </tr>
+                <tr>
+                  <td class="br-left br-right title-1 br-bt">Sensación Térmica</td>
+                  <td class="number br-left "><span class="tempVal" oval="23">23</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number"><span class="tempVal" oval="22">22</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number"><span class="tempVal" oval="20">20</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number"><span class="tempVal" oval="19">19</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number"><span class="tempVal" oval="19">19</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number"><span class="tempVal" oval="19">19</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number"><span class="tempVal" oval="19">19</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                  <td class="number  br-right"><span class="tempVal" oval="20">20</span><em class="gradosMark">°</em><span class="tempMark"></span></td>
+                </tr>
+                <tr>
+                  <td class="br-left br-right title-1 br-bt">Viento</td>
+                  <td class="br-left br-bt"><span class="windVal" oval="25.9">25.9</span> NE</td>
+                  <td class=" br-bt"><span class="windVal" oval="29.6">29.6</span> ENE</td>
+                  <td class=" br-bt"><span class="windVal" oval="31.5">31.5</span> ESE</td>
+                  <td class=" br-bt"><span class="windVal" oval="33.3">33.3</span> ESE</td>
+                  <td class=" br-bt"><span class="windVal" oval="31.5">31.5</span> ESE</td>
+                  <td class=" br-bt"><span class="windVal" oval="25.9">25.9</span> ESE</td>
+                  <td class=" br-bt"><span class="windVal" oval="22.2">22.2</span> E</td>
+                  <td class=" br-bt br-right"><span class="windVal" oval="24.1">24.1</span> ENE</td>
+                </tr>
+              </tbody>
+           </table>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

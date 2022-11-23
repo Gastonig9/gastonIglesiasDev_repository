@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Secular One', sans-serif;
+    background-color: #AFD0BF;
+}
+
+.contain {
+    width: 70%;
+    background-color: #E2EFDE;
+    color: #808F87;
+    text-align: center;
+    border: 20px solid #808F87;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.intro {
+    background-image: url(../img/clima.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.intro h1 {
+    width: 70%;
+    margin: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #E2EFDE;
+}
+
+.absoluteContain {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 5px solid #AFD0BF;
+    justify-content: center;
+    background-image: url(../img/fondoClima.jpg);
+}
+
+.containerInfo {
+    background-color: #808F87;
+    color: #AFD0BF;
+    width: 35%;
+    font-size: 35px;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.containerInfo div {
+    margin-top: 5px;
+}
+
+.containerWeather {
+    background-color: #808F87;
+    color: #AFD0BF;
+    width: 30%;
+    font-size: 35px;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 100px;
+}
+
+.containerWeather div {
+    margin-top: 5px;
+}
+
+.boxTable {
+    height: 300px;
+    background-image: url(../img/fondoClima2.jpg);
+    color: white;
+    border-top: 5px solid #AFD0BF;
+    border-bottom: 2px dashed #808F87;
+    padding: 20px;
+}
+
+.boxTable table {
+    width: 100%;
+    background-color: #808F87;
+}
+
+.boxTable h2 {
+    width: 70%;
+    margin: auto;
+    background-color: #808F87;
+    color: #808F87;
+    border-radius: 30px;
+}

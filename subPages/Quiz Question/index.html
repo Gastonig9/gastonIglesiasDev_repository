@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Monofett&family=Tauri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Quizz Question</title>
+</head>
+<body>
+    <div class="contain">
+        <div class="title">
+            <img src="img/logo.png" alt="logo quizz question" width="200px" >
+        </div>
+        <div id="encabezado" class="header">
+            <div id="categoria" class="categoria">
+                Categoria
+            </div>
+            <div id="question" class="pregunta">
+                Pregunta
+            </div>
+            <img id="imagen" src="" alt="" class="imagen" style="width: 90%; height: 200px; object-fit: contain;">
+        </div>
+        <div id="opcion_1" onclick="seleccionarOpciones(0)" class="btn">Opcion 1</div>
+        <div id="opcion_2" onclick="seleccionarOpciones(1)"  class="btn">Opcion 2</div>
+        <div id="opcion_3" onclick="seleccionarOpciones(2)"  class="btn">Opcion 3</div>
+        <div id="opcion_4" onclick="seleccionarOpciones(3)" class="btn">Opcion 4</div>
+
+        <audio id="sound" src="media/Cuek.mp3"></audio>
+    </div>
+
+
+     <!--SCRIPT-->
+    <script src="js/preguntas.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

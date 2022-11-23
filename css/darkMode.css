@@ -1,0 +1,116 @@
+/***DARK MODE***/
+
+#modo{
+    width: 3px;
+    font-size: 30px;
+    margin-right: 60px;
+    margin-top: 1px;
+    cursor: pointer;
+}
+
+@media (max-width: 696px) {
+    #modo {
+        margin-top: 17px;
+        margin-right: 10px;
+    }
+}
+
+#modo > div > .botonOscuro {
+    width: 50px;
+}
+
+
+.dark{
+    background-color: #b53943;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.dark nav {
+    background-color: black !important;
+}
+
+.dark nav > .container > a {
+    color: #FFF;
+}
+
+.dark nav > .container > button  {
+    background-color: white;
+}
+
+.dark nav > .container > #navbarNav > ul > li > a {
+    color: #FFF;
+}
+
+.dark nav > .container > .navbarNavdos > ul > li > a > i {
+    color: #F2AF29;
+}
+
+.dark nav > .container > .navbarNavdos > ul > li > p {
+    color:#FFF;
+}
+
+.dark header > .cardsHeader > .encabezado {
+    background-color: #F2AF29;
+}
+
+.dark header > .cardsHeader > .encabezado > div > h1 {
+    background-color: #0a0a0b;
+    color: white;
+}
+
+.dark header > .cardsHeader > .encabezado > div > h4 {
+    background-color: #FFF;
+    color: black;
+}
+
+.dark header > .cardsImage > div > div > h5 {
+    background-color: #F2AF29;
+    color: black;
+}
+
+.dark header > .cardsImage > div > div > p {
+    background-color: #F2AF29;
+    color: black;
+} 
+
+.dark footer > .sectionRedes {
+    background-color: #1f1f22;;
+    color: #FFF;
+}
+
+.dark footer > .sectionInfo {
+    background-color: #0a0a0b;
+    color: #FFF;
+    padding-top: 10px;
+}
+
+.dark footer > .sectionCopy{
+    background-color: #1f1f22;
+    color: white;
+}
+
+.dark > .container > .containabout > h1 {
+    background-color: #FFF;
+    color: #a52a2a;
+}
+
+.dark > .container > .containabout > div {
+    background-color: rgba(242, 175, 41,0.8);
+    color: #0a0a0b;
+}
+
+.dark > .container > .containabout > div > h2 {
+    color: black;
+}
+
+.dark > .container > .containabout > section > .contentskillsdos {
+    background-color: rgba(242, 175, 41,0.8);
+    color: black;
+}
+
+.dark > .container > .containabout > section > .contentskillsdos > div {
+    background-color: #0a0a0b;
+    border: blue;
+}
+
+/***DARK MODE***/

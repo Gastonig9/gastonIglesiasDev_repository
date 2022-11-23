@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="desarrolloWeb, desarrollo, webDesigner, paginas web, sitios web, developer, Freelance, JavaScript,html,css,SQL">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/darkMode.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Home</title>
+</head>
+<body>
+  <div class="lenguage fixed-bottom">
+    <button class="en" id="englishLenguage">
+      <img src="img/ukFlag.png" width="45" alt="Bandera del Reino Unido" title="ENGLISH LANGUAGE">
+    </button>
+  </div>
+    <!--BUTTON WHATSAPP-->
+    <a href="https://wa.me/541130458590?text=Enviar%20mensaje%20a%20Gaston%20Iglesias" class="whatsapp animate__animated animate__pulse animate__infinite	infinite" target="_blank"> 
+      <i class="fa-brands fa-whatsapp whatsapp-icon"></i>
+    </a>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navId" style="margin-bottom: 20px;">
+        <div class="container">
+          <a class="navbar-brand animate__animated animate__fadeIn" href="#">
+                <i class="fa-solid fa-glasses"></i>
+                GastonIglesiasDev
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav animate__animated animate__backInLeft">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" rel=”next” href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" rel=”next” rel=”prev” href="sobremi.html">Sobre Mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" rel=”next” rel=”prev” href="proyectos.html">Mis proyectos</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbarNavdos">
+            <ul class="nav justify-content-end container animate__animated animate__backInRight">
+              <li>
+                <p style="font-size: 10px; margin-top: 20px; margin-right: 10px">Modo Oscuro</p>
+              </li>
+              <div class="modo" id="modo" onclick="">
+                <div class="form-check form-switch">
+                  <input class="form-check-input botonOscuro bg-warning" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                </div>
+              </div>
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://www.instagram.com/nahuelche9/" target="_blank" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/Gastonig9" target="_blank" title="Perfil en GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:gastonig2020@gmail.com" target="_blank" title="Mail" >
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/gast%C3%B3n-iglesias-847221213/" target="_blank" title="Linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>  
+    </nav>
+
+    <!--FIN DE NAVBAR-->
+    
+    <!--HEADER-->
+    <header>
+      <div class="alert alert-warning alert-dismissible fade show fixed-bottom" role="alert">
+        <strong>¡Bienvenido!</strong> Puedes ver el codigo de este sitio en GitHub, haciendo click <a href="#">aqui</a>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      <div class="card text-bg-dark encabezado" id="fotoEncabezado">
+        <img src="img/fotoperfil.jpg" class="card-img animate__animated animate__zoomInDown" alt="Foto de perfil de Gaston Iglesias, creador del sitio">
+        <div class="card-img-overlay">
+          <h1 class="card-title animate__animated animate__fadeInLeft">Gaston Iglesias</h5>
+          <h4 class="card-text animate__animated animate__fadeInRight">Desarrolador Web.</h4>
+        </div>
+      </div>
+      <div id="carouselExampleCaptions container-fluid" class="carousel slide carousselHeader" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/banner1.jpg" class="d-block w-100" alt="Imagen decorativa del encabezado de la pagina">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Diseñador web y editor</h5>
+                  <p>Mis principales aficiones son el Diseño web y la edicion. Podes saber mas sobre mis habilidades <a href="sobremi.html">aqui</a>
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/edicion2.jpg" class="d-block w-100" alt="Imagen decorativa de edicion de video, encabezado de la pagina">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Soy estudiante y Freelancer</h5>
+                  <p>Podes consultar mis proyectos como estudiante y otros trabajos <a href="proyectos.html">aqui</a>.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/contacto.jpg" class="d-block w-100" alt="Imagen decorativa de contacto, encabezado de la pagina">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>¡Estemos en contacto!</h5>
+                  <p>Contactame a traves de mis redes sociales o por mail.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+      </div>
+      <br>
+      <div class="cardsHeader">
+        <div class="card text-bg-dark encabezado">
+          <img src="img/studentLogo.jpg" class="card-img" alt="Imagen decorativa con el logo de un estudiante">
+          <div class="card-img-overlay">
+            <h1 class="card-title">Estudiante</h5>
+          </div>
+        </div>
+        <div class="card text-bg-dark encabezado">
+          <img src="img/freelanceLogo.jpg" class="card-img" alt="Imagen decorativa con el logo Freelance">
+          <div class="card-img-overlay">
+            <h1 class="card-title">Freelance</h5>
+          </div>
+        </div>
+        <div class="card text-bg-dark encabezado">
+          <img src="img/videoLogo.jpg" class="card-img" alt="Imagen decorativa con el logo de edicion de video">
+          <div class="card-img-overlay">
+            <h1 class="card-title">Editor</h5>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="cardsImage">
+        <h2>Educacion</h2>
+        <div class="card text-bg-dark cardUna">
+          <img src="img/universidadLogo.png" class="card-img" alt="Imagen decorativa con el logo de la Universidad Nacional de las artes">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Artes Multimediales en Universidad Nacional de las Artes</h5>
+            <p class="card-text">Nivel Universitario</p>
+            <p class="card-text">Desde Marzo 2021</p>
+          </div>
+        </div>
+        <div class="card text-bg-dark cardCoder">
+          <img src="img/coderhouseLogo.jpg" class="card-img" alt="Imagen decorativa con el logo de Coderhouse">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Desarrolador Web Full Stack en Coderhouse</h5>
+            <p class="card-text">Nivel Terciario</p>
+            <p class="card-text">Desde Agosto 2022</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="cardAcordion">
+        <h2>Cursos</h2>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button bg-info text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Carrera Desarrolo Web Full Stack - Coderhouse - (Agosto 2022 - Actualidad)
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <u>Programacion FrontEnd para el desarrolo de sitios web y programacion BackEnd para la creacion de aplicaciones modernas del lado del servidor.</u>
+                <ul>
+                  <br>
+                  <h6>Front End:</h6>
+                  <li>HTML y CSS lenguajes de marcado para la maquetacion y estilizacion de sitios web</li>
+                  <li>Flexbox y Grid</li>
+                  <li>Bootstrap</li>
+                  <li>Diseño Responsive para la adaptacion de sitios webs a diferentes dispositivos</li>
+                  <li>Preprocesador SASS</li>
+                  <hr>
+                  <li>JavaScript para la creacion de funcionalidades para sitios web</li>
+                  <li>Manejo de API</li>
+                  <li>AJAX</li>
+                  <li>React JS</li>
+                  <hr>
+                  <h6>Back End:</h6>
+                  <li>NodeJS</li>
+                  <li>SQL</li>
+                  <li>Sistema de bases de datos NoSQL (MongoDB)</li>
+                </ul>
+              </div>
+            </div>
+          </div>  
+          <div class="accordion-item">
+            <h2 class="accordion-header " id="panelsStayOpen-headingOne">
+              <button class="accordion-button bg-primary bg-gradient text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Curso de formación profesional: Wordpress - Crehana - (octubre 2021 – noviembre 2021)
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <ul>
+                  <u>Creacion de sitios webs y tiendas online con el sistema de gestion Wordpress</u>
+                  <li>WordPress</li>
+                  <li>Creacion de funcionalidades para sitios webs</li>
+                  <li>Woocomerce (creacion de tiendas online e-commerce)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header bg-danger id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed bg-warning bg-gradient text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+               Curso de formación profesional: Paquete Adobe – Instituto DaVinci - (diciembre 2020 – marzo 2021)
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <ul>
+                  <u>Uso de las herramientas del paquete Adobe para la creacion, diseño y edicion de contenido</u>
+                  <li>Adobe Photoshop para el diseño creativo, creacion logotipos, backgrounds, correcion de color y banners para sitios web</li>
+                  <li>Adobe Premiere para la creacion y edicion de video</li>
+                  <li>Adobe After Effects orientado a la animacion motion graphics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed bg-danger text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+               Curso de formación profesional: SQL Desarrollo y gestión de bases de datos – Crehana – (abril 2022 – mayo 2022)
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <ul>
+                  <u>Administracion y gestion en sistemas de gestión de bases de datos relacionales.</u>
+                  <li>Lenguaje de definición de datos (DDL)</li>
+                  <li>Lenguaje de manipulación de datos DML (DML)</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contacto">
+        <h1 class="logo">Contacto</h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Formulario</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre completo</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Telefono</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                       <label>Mensaje</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h4>More Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</li>
+                    <li><i class="fas fa-phone"></i> +54 11 3045 8590</li>
+                    <li><i class="fas fa-envelope-open-text"></i> gastonig2020@gmail.com</li>
+                </ul>
+                <p>© gastonIglesiasDev.com</p>
+            </div>
+        </div>
+      </div>
+    </header>
+    <!--FIN DEL HEADER-->
+    <br>
+     <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+          <!-- Section: Social media -->
+          <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom sectionRedes">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+              <span>Mantengamos contacto por mis redes sociales</span>
+            </div>
+            <!-- Left -->
+        
+            <!-- Right -->
+            <div>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+        
+          <!-- Section: Links  -->
+          <section class="sectionInfo">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fa-solid fa-glasses"></i> Gaston Iglesias
+                  </h6>
+                  <p>
+                    Diseño Web.<br>
+                    Edicion de video.<br>
+                    Diseño Creativo
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Desarrolo Web
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-reset">HTML</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">CSS</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Bootstrap</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">JavaScript</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Diseño y Edicion
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-reset">Adobe Photoshop</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Adobe Premiere</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Adobe After Effects</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Adobe Ilustrator</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                  <p><i class="fas fa-home me-3"></i> Buenos Aires, Argentina</p>
+                  <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    gastonig2020@gmail.com
+                  </p>
+                  <p><i class="fas fa-phone me-3"></i> +54 11 3045 8590 </p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-4 sectionCopy">
+            © 2022:
+            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">gastonIglesiasDev.com.ar</a>
+          </div>
+          <!-- Copyright -->
+    </footer>
+<!-- Footer -->
+<!--SCRIPT-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/index.js"></script>
+
+</body>
+</html>
